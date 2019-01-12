@@ -4,23 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Train Time</title>
 
-	<!-- bootstrap CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 </head>
 <body>
-	<!-- wrapper -->
+
 	<div class="container">
-		<!-- jumbotron -->
-		<div class="jumbotron" style="text-align:center; background-color:#BF5700">
-  			<h1 style="color:white">Train Time</h1>
-  			<p><h4 style="color:white">Home of Midnight &amp; Sometimes Later Railroad</h4></p>
+		<div class="jumbotron" style="text-align:center; background-color: blue">
+  			<h1 style="color:white">Train Time's</h1>
 		</div>
 
-		<!-- current trains -->
 		<div class="panel panel-primary">
  			<div class="panel-heading">
-   				<h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+   				<h3 class="panel-title">Schedule</h3>
   			</div>
   
   			<div class="panel-body">
@@ -28,16 +24,13 @@
 					<thead>
 						<th>Train Name</th>
 						<th>Destination</th>
-						<th>Frequency (min)</th>
-						<th>Next Arrival</th>
-						<th>Minutes Away</th>				
+						<th>Minutes/Frequency</th>			
 					</thead>
 					<tbody id="newTrains"></tbody>
 	  			</table>
   			</div>
 		</div>
 
-		<!-- add employee  -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title"><strong>Add Train</strong></h3>
@@ -45,7 +38,7 @@
 		
 			<div class="panel-body">		
 				<form>
-					<!-- input textboxes -->
+					
 					<div class="form-group">
 						<label for="">Train Name</label>
 						<input type="text" class="form-control" id="nameInput">
@@ -56,17 +49,12 @@
 						<input type="text" class="form-control" id="destinationInput">
 					</div>
 
-					<div class="form-group">
-						<label for="">First Train Time (HH:mm - military time)</label>
-						<input type="text" class="form-control" id="firstTrainInput">
-					</div>
 
 					<div class="form-group">
-						<label for="">Frequency (min)</label>
+						<label for="">Frequency (minutes)</label>
 						<input type="text" class="form-control" id="frequencyInput">
 					</div>
 					
-					<!-- submit button -->
 					<button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
 				</form>
 			</div>
